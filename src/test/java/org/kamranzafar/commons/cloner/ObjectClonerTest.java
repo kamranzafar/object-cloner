@@ -42,7 +42,6 @@ public class ObjectClonerTest {
         TestObject clone = new ObjectCloner<TestObject>().shallowClone(testObject);
 
         Assert.assertTrue(testObject.getName().equals(clone.getName()));
-        Assert.assertNull(clone.getTestObject().getTestObject().getName());
     }
 
     @Test
