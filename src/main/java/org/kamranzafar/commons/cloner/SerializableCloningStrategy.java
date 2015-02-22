@@ -41,7 +41,6 @@ public class SerializableCloningStrategy<T> implements CloningStrategy<T> {
         T clone;
 
         try {
-            // Increased buffer size
             ByteArrayOutputStream bos = new ByteArrayOutputStream(5120);
             ObjectOutputStream out = new ObjectOutputStream(bos);
             out.writeObject(original);
